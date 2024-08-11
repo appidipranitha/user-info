@@ -1,0 +1,31 @@
+2024-08-11T17:13:39.350-04:00  INFO 75621 --- [userinfo] [main] c.m.m.userinfo.UserInfoApplication       : Starting UserInfoApplication using Java 17.0.12 with PID 75621 (/Users/pranitha/MagMutual/userinfo/target/classes started by ppendru in /Users/pranitha/MagMutual/userinfo)
+2024-08-11T17:13:39.355-04:00  INFO 75621 --- [userinfo] [main] c.m.m.userinfo.UserInfoApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-11T17:13:41.933-04:00  INFO 75621 --- [userinfo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-11T17:13:42.052-04:00  INFO 75621 --- [userinfo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
+2024-08-11T17:13:43.387-04:00  INFO 75621 --- [userinfo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-11T17:13:43.414-04:00  INFO 75621 --- [userinfo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-11T17:13:43.415-04:00  INFO 75621 --- [userinfo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-11T17:13:43.537-04:00  INFO 75621 --- [userinfo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-11T17:13:43.541-04:00  INFO 75621 --- [userinfo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4031 ms
+2024-08-11T17:13:43.805-04:00  INFO 75621 --- [userinfo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-11T17:13:44.184-04:00  INFO 75621 --- [userinfo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-11T17:13:44.194-04:00  INFO 75621 --- [userinfo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-11T17:13:44.216-04:00  INFO 75621 --- [userinfo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-11T17:13:44.379-04:00 DEBUG 75621 --- [userinfo] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-11T17:13:44.611-04:00  INFO 75621 --- [userinfo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-11T17:13:44.728-04:00  INFO 75621 --- [userinfo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-11T17:13:44.795-04:00  INFO 75621 --- [userinfo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-11T17:13:45.484-04:00  INFO 75621 --- [userinfo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-11T17:13:45.600-04:00  WARN 75621 --- [userinfo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-11T17:13:49.254-04:00  INFO 75621 --- [userinfo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-11T17:13:49.656-04:00  INFO 75621 --- [userinfo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-11T17:13:51.582-04:00  INFO 75621 --- [userinfo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-11T17:13:53.359-04:00  WARN 75621 --- [userinfo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-11T17:13:54.178-04:00 DEBUG 75621 --- [userinfo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-08-11T17:13:54.458-04:00 DEBUG 75621 --- [userinfo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-08-11T17:13:54.613-04:00 DEBUG 75621 --- [userinfo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-11T17:13:54.736-04:00 DEBUG 75621 --- [userinfo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-11T17:13:55.824-04:00  INFO 75621 --- [userinfo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2024-08-11T17:13:56.033-04:00  INFO 75621 --- [userinfo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-11T17:13:56.066-04:00  INFO 75621 --- [userinfo] [main] c.m.m.userinfo.UserInfoApplication       : Started UserInfoApplication in 17.455 seconds (process running for 18.216)
+2024-08-11T17:13:57.444-04:00  INFO 75621 --- [userinfo] [main] c.m.m.userinfo.service.CsvDataImporter   : Processed 1000 records from CSV file
